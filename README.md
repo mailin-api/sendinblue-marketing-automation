@@ -37,10 +37,10 @@ $event->identify($data);
 
 List of API calls that you can make, & click to read more about it.
 
- * [Identify User](https://apidocs.sendinblue.com/identify-user/) - Get your account information
- * [Track Events](https://apidocs.sendinblue.com/track-events/) - Get your SMTP account information
- * [Track Links](https://apidocs.sendinblue.com/track-links/) - Create a Reseller child account
- * [Track Pages](https://apidocs.sendinblue.com/track-pages/) - Update a Reseller child account
+ * [Identify User](https://apidocs.sendinblue.com/identify-user/)
+ * [Track Events](https://apidocs.sendinblue.com/track-events/)
+ * [Track Links](https://apidocs.sendinblue.com/track-links/)
+ * [Track Pages](https://apidocs.sendinblue.com/track-pages/)
 
 
 ## Support and Feedback
