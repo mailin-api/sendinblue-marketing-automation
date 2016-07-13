@@ -51,9 +51,6 @@
         {
         	$data['sib_type'] = 'identify';
 
-        	if (!array_key_exists('name',$data)) {
-        		$data['name'] = "Contact Created";
-        	}
 			$url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         	if (!array_key_exists('url',$data)) {
         		$data['url'] = $url;
@@ -127,7 +124,7 @@
         	
         	//name
         	if (!array_key_exists('name',$data)) {
-        		$data['name'] = $_SERVER['REQUEST_URI'];
+        		$data['sib_name'] = $_SERVER['REQUEST_URI'];
         	}
         	
         	//store email cookie
