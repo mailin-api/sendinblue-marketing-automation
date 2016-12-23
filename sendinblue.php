@@ -81,10 +81,11 @@
         	}
         	
         	//get email cookie
-        	
-        	if (isset($_COOKIE['email_id']) && $_COOKIE['email_id'] != '') {
-		    	$data['email_id'] = $_COOKIE['email_id'];        	
-        	}
+        	if (!array_key_exists('email_id',$data)) {
+                if (isset($_COOKIE['email_id']) && $_COOKIE['email_id'] != '') {
+                    $data['email_id'] = $_COOKIE['email_id'];        	
+                }
+            }
         	if (isset($_COOKIE['session_id']) && $_COOKIE['session_id'] != '') {
 		    	$data['session_id'] = $_COOKIE['session_id'];        	
         	}
@@ -123,8 +124,12 @@
         	}
         	
         	//name
-        	if (!array_key_exists('name',$data)) {
-        		$data['sib_name'] = $_SERVER['REQUEST_URI'];
+        	if (!array_key_exists('sib_name',$data)) {
+				if (array_key_exists('name',$data)) {
+					$data['sib_name'] = $data['name'];
+				}else{
+					$data['sib_name'] = $_SERVER['REQUEST_URI'];
+				}
         	}
         	
         	//store email cookie
