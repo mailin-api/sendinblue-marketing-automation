@@ -1,5 +1,7 @@
 # SendinBlue Marketing Automation Library
 
+> **Note:** The latest **V2.0** ( LTS ) is now maintained at <code>https://tracker-doc.sendinblue.com/v2.0/reference</code> and the Documentation is available here <code>https://tracker-doc.sendinblue.com</code>
+
 SendinBlue Marketing Automation module helps you automate your marketing campaigns with minimum efforts and development cost.
 
 
